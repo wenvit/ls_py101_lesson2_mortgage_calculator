@@ -1,0 +1,5 @@
+# hidden file used by Finder on Mac
+.DS_Store
+
+# Pylint config file for Launch School
+.pylintrc
