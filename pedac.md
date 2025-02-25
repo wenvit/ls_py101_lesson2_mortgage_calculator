@@ -42,7 +42,11 @@ monthly payment
 ### MENTAL MODEL
 
 Ask user to input loan amount, annual percentage rate (APR), and loan duration.
-Check that entered values are valid and can be converted to float types. Calculate monthly interest rate by dividing APR / 12. Calculate loan duration in months by multiplying years by 12 months/yr. Calculate monthly payment using given formula. Ask if user wants to calculate another monthly payment.
+Check that entered values are valid and can be converted to float types. 
+Calculate monthly interest rate by dividing APR / 12. 
+Calculate loan duration in months by multiplying years by 12 months/yr. 
+Calculate monthly payment using given formula. 
+Ask if user wants to calculate another monthly payment.
 
 ### TEST CASES 
 
@@ -58,7 +62,7 @@ catch `ValueError` & return `True`, otherwise return `False`
 4. Print out header for monthly mortgage payment calculator
 5. Wrap rest of code steps in `while True` loop
 6. Wrap user input requests in `while True` loops passing input values as arguments to `invalid_num` function
-     -- Ask user to input loan amount ($)
-     -- Ask user to input APR as a percentage
-     -- Ask user to input loan duration in years
+  * Ask user to input loan amount ($)
+  * Ask user to input APR as a percentage
+  * Ask user to input loan duration in years
 7. Ask user if they'd like to do another calculation, if not yes, break
