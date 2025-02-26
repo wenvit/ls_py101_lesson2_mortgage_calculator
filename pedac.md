@@ -56,13 +56,15 @@ Interest rate of 0
 
 1. Define function `prompt` with parameter `message` (str) that 
    prints f-string combining ==> with interpolated `message`
-2. Define function `invalid_num` that returns `True` if input numeric strings cannot be converted to float type. Use try/except block to 
-catch `ValueError` & return `True`, otherwise return `False`
-3. Define function `monthly_payment` that returns calculated monthly mortgage payment based on above formula
-4. Print out header for monthly mortgage payment calculator
-5. Wrap rest of code steps in `while True` loop
-6. Wrap user input requests in `while True` loops passing input values as arguments to `invalid_num` function
+2. Define function `invalid_num` that returns `True` if input numeric strings cannot be converted to float type. Use try/except block to  catch `ValueError` & return `True`, otherwise return `False`
+3. Define function `str_to_num` to convert valid numeric strings to floats
+4. Define function `payment_with_int` that returns calculated monthly mortgage payment based on above formula
+5. Define function `payment_int_free` that returns calculated monthly mortgage payment without interest: loan amount / months
+6. Print out header for monthly mortgage payment calculator
+7. Wrap rest of code steps in `while True` loop
+8. Wrap user input requests in `while True` loops, passing input values as arguments to `invalid_num` function, then passing returned valid strings to `str_to_num` function to convert to floats
   * Ask user to input loan amount ($)
-  * Ask user to input APR as a percentage
+  * Ask user if paying interest. If 'y', ask user to input APR as a percentage
   * Ask user to input loan duration in years
-7. Ask user if they'd like to do another calculation, if not yes, break
+9. If user paying interest, calculate monthly mortgage payment with `payment_with_int`. If no interest, calculate monthly mortgage payment with `payment_int_free`
+10. Ask user if they'd like to do another calculation, if not yes, break
